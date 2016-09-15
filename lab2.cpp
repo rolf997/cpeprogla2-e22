@@ -16,42 +16,46 @@ double problem1(float x){
 
 
 int areaSqu(int side, int area){
-	 
+	int x,y;
 	cout<<"Enter the side of the square: ";
 	cin>>side;
 	area=side*side;
 	cout<<"The area is "<<area<<" square units"<<endl;
+		return problem3(x,y);
 }
 
 int areaRect(int length, int width){
-	
+  	int x,y;
 	int area;
 	cout<<"Enter the length and width of the rectangle: ";
 	cin>>length>>width;
 	cout<<endl;
 	area=length*width;
 	cout<<"The area is "<<area<<" square units";
+		return problem3(x,y);
 }
 
 int areaTri(int base, int height){
-	
+	int x,y;
 	double area;
 	cout<<"Enter the base and the height: ";
 	cin>>base>>height;
 	cout<<endl;
 	area=(base*height)/2;
 	cout<<"The area is "<<setprecision(3)<<area<<" square units";
+		return problem3(x,y);
 	
 }
 
 int areaCir(int radius, float pi){
-	
+	int x,y;
 	double area;
 	cout<<"Enter the radius of the cirlce: ";
 	cin>>radius;
 	cout<<endl;
 	area=2*3.141519*radius;
 	cout<<"The area is "<<setprecision(3)<<area<<" square units";
+		return problem3(x,y);
 }
 
 int problem2(int i, int j){
