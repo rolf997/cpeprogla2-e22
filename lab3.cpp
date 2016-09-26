@@ -14,7 +14,7 @@ void problem1(){
 		getline(cin, str2);
 		
 		if(str2.compare(str1)<0){
-			cout<<"negative"<<endl<<endl<<endl;
+			cout<<"positive"<<endl<<endl<<endl;
 		}
 		else if(str2.compare(str1)==0){
 			cout<<"equal"<<endl<<endl<<endl;
