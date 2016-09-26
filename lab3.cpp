@@ -75,6 +75,55 @@ void problem4(){
         cout << str1 << " is a palindrome" << endl; 
     }
 }
+
+void problem5(){
+	int i;
+	char str[100];
+	cout<<"************************"<<endl
+		<<"Problem 5"<<endl
+		<<"************************"<<endl;
+	cout<<"Enter some String: ";
+	cin.ignore();
+	cin.getline(str, 100);
+
+   str[0]=toupper(str[0]);
+
+       for(int j=0;j<strlen(str);j++)
+      if(str[j]==' ')
+         str[j+1]=toupper(str[j+1]);
+
+       cout<<str<<endl<<endl<<endl;
+
+	}
+
+
+
+void problem6()
+{
+   int i;
+   char str[100];
+   cout<<"************************"<<endl
+		<<"Problem 6"<<endl
+		<<"************************"<<endl;
+   cout<<"Enter a string: ";
+   cin.getline(str, 100);
+   for(i=0; i<strlen(str); i++){
+   	if (isalpha(str[i])){
+   		cout<<str[i];
+	   }
+   	else if (isspace(str[i])){
+   		cout<<endl;
+   		 
+	   }
+	else if (isdigit(str[i])){
+		cout<<endl;
+	}
+	
+	   else{
+	   	;
+	   }
+   }
+}
 	
 
 main(){
@@ -94,6 +143,12 @@ main(){
 		
 		case 4:
 			problem4();
+		
+		case 5:
+			problem5();
+		
+		case 6:
+			problem6();
 			
 		default:
 			;
